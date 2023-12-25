@@ -15,6 +15,7 @@ class _SecondContainerState extends State<SecondContainer> {
     return ScreenTypeLayout(
       mobile: MobileSecondContainer(),
       desktop: DesktopSecondContainer(),
+      tablet: TabletSecondContainer(),
     );
   }
 
@@ -55,9 +56,14 @@ class _SecondContainerState extends State<SecondContainer> {
                       child: Container(
                         width: double.infinity,
                         height: 712,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
+                        child: FittedBox(
+                          fit: BoxFit.contain,
+                          alignment: Alignment.bottomCenter,
+                          child: Image.asset('assets/images/dashboard.png'),
                         ),
+                        // decoration: BoxDecoration(
+                        //   image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
+                        // ),
                       )
                   ),
                 ],
@@ -113,11 +119,17 @@ class _SecondContainerState extends State<SecondContainer> {
           Container(
             padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 0),
             child: Container(
+              alignment: Alignment.bottomCenter,
               width: double.infinity,
-              height: 255,
-              decoration: BoxDecoration(
-                  image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
+              height: 250,
+              child: FittedBox(
+                fit: BoxFit.contain,
+                alignment: Alignment.bottomCenter,
+                child: Image.asset('assets/images/dashboard.png'),
               ),
+              // decoration: BoxDecoration(
+              //     image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
+              // ),
             ),
           ),
           Container(
@@ -165,5 +177,75 @@ class _SecondContainerState extends State<SecondContainer> {
       ),
     );
   }
-  
+
+  Widget TabletSecondContainer(){
+    return Container(
+      width: double.infinity,
+      // height: 900,
+      decoration: BoxDecoration(
+        color: MyColors.primaryColor,
+      ),
+      child: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 0),
+            child: Container(
+              alignment: Alignment.bottomCenter,
+              width: double.infinity,
+              height: 550,
+              child: FittedBox(
+                fit: BoxFit.contain,
+                alignment: Alignment.bottomCenter,
+                child: Image.asset('assets/images/dashboard.png'),
+              ),
+              // decoration: BoxDecoration(
+              //     image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
+              // ),
+            ),
+          ),
+          Container(
+            width: MediaQuery.sizeOf(context).width,
+            color: Colors.white,
+            padding: EdgeInsets.symmetric(vertical: 40),
+            child: Column(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(facebookLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(googleLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(cococolaLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(linkedInLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(samsungLogo, fit: BoxFit.contain,),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
 }
