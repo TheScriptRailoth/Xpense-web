@@ -103,6 +103,67 @@ class _SecondContainerState extends State<SecondContainer> {
   }
 
   Widget MobileSecondContainer(){
-    return Container();
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: MyColors.primaryColor,
+      ),
+      child: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 0),
+            child: Container(
+              width: double.infinity,
+              height: 255,
+              decoration: BoxDecoration(
+                  image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
+              ),
+            ),
+          ),
+          Container(
+            width: MediaQuery.sizeOf(context).width,
+            color: Colors.white,
+            padding: EdgeInsets.symmetric(vertical: 30),
+            child: Column(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(facebookLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(googleLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(cococolaLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(linkedInLogo, fit: BoxFit.contain,),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 10),
+                  width: 120,
+                  height: 30,
+                  child: Image.asset(samsungLogo, fit: BoxFit.contain,),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
   }
+  
 }
