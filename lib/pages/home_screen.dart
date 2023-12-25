@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:xpense_web/pages/containers/first_container.dart';
+import 'package:xpense_web/pages/containers/second_container.dart';
 import 'package:xpense_web/widgets/navbar.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             children: [
               NavBar(),
-              FirstContainer()
+              FirstContainer(),
+              SecondContainer(),
             ],
           ),
         ),
