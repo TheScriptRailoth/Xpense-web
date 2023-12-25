@@ -72,7 +72,7 @@ class _FirstContainerState extends State<FirstContainer> {
 
   Widget DesktopFirstContainer(){
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20, horizontal: MediaQuery.sizeOf(context).width/10),
+      margin: EdgeInsets.symmetric(vertical: 60, horizontal: MediaQuery.sizeOf(context).width/10),
       child: Row(
         children: [
           Expanded(
