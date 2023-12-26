@@ -15,6 +15,7 @@ class _ThirdContainerState extends State<ThirdContainer> {
     return ScreenTypeLayout(
         mobile: MobileThirdContainer(),
         desktop: DesktopThirdContainer(),
+        tablet: TabletThirdContainer(),
     );
   }
   Widget DesktopThirdContainer(){

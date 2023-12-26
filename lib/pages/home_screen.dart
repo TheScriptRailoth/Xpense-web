@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:xpense_web/pages/containers/first_container.dart';
+import 'package:xpense_web/pages/containers/fourth_container.dart';
 import 'package:xpense_web/pages/containers/second_container.dart';
 import 'package:xpense_web/pages/containers/third_container.dart';
 import 'package:xpense_web/widgets/navbar.dart';
@@ -22,6 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
               FirstContainer(),
               SecondContainer(),
               ThirdContainer(),
+              FourthContainer(),
             ],
           ),
         ),
