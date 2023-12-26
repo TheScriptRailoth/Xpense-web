@@ -99,7 +99,7 @@ class _FifthContainerState extends State<FifthContainer> {
           Container(
             height: MediaQuery.sizeOf(context).width/1.2,
             width: MediaQuery.sizeOf(context).width/1.2,
-            child: Image.asset(illustration_3, fit: BoxFit.contain,),
+            child: Image.asset(illustration_4, fit: BoxFit.contain,),
           ),
           SizedBox(height: 30,),
           Text("USE ANYTIME", style: TextStyle(color:Color(0xffBDBDBD), fontSize: 20, fontWeight: FontWeight.w400)),
