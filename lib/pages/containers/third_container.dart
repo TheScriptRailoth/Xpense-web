@@ -56,6 +56,34 @@ class _ThirdContainerState extends State<ThirdContainer> {
     );
   }
   Widget MobileThirdContainer(){
-    return Container();
+    return Container(
+      color: Colors.white,
+      padding: EdgeInsets.symmetric(horizontal: MediaQuery.sizeOf(context).width/10, vertical: 50),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            height: 300,
+            child: Image.asset(illustration_2, fit: BoxFit.contain,),
+          ),
+          SizedBox(height: 30,),
+          Text("Alwalys online", style: TextStyle(color:Color(0xffBDBDBD), fontSize: 20, fontWeight: FontWeight.w400)),
+          SizedBox(height: 10,),
+          Text("Real-time support with cloud", style: TextStyle(fontWeight: FontWeight.bold, fontSize: MediaQuery.sizeOf(context).width/20, height: 1.2),),
+          SizedBox(height: 10,),
+          Text("Tellus lacus morbi sagittis lacus in. Amet nisl at \nmauris enim accumsan nisi, tincidunt vel. Enim \nipsum, amet quis ullamcorper eget ut.", style: TextStyle(
+            color: Color(0xffBDBDBD), fontSize: MediaQuery.sizeOf(context).width/30,
+          ),),
+          SizedBox(height: 10,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Learn More", style: TextStyle(color:MyColors.primaryColor, fontSize: MediaQuery.sizeOf(context).width/30, fontWeight: FontWeight.w400)),
+              Icon(Icons.arrow_forward_rounded, color: MyColors.primaryColor,)
+            ],
+          )
+        ],
+      ),
+    );
   }
 }
