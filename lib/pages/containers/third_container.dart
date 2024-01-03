@@ -56,6 +56,7 @@ class _ThirdContainerState extends State<ThirdContainer> {
       ),
     );
   }
+
   Widget MobileThirdContainer(){
     return Container(
       color: Colors.white,

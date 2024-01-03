@@ -112,25 +112,26 @@ class _SecondContainerState extends State<SecondContainer> {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: MyColors.primaryColor,
+        // color: MyColors.primaryColor,
       ),
       child: Column(
         children: [
           Container(
+            color: MyColors.primaryColor,
             padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 0),
-            child: Container(
-              alignment: Alignment.bottomCenter,
-              width: double.infinity,
-              height: 250,
-              child: FittedBox(
-                fit: BoxFit.contain,
-                alignment: Alignment.bottomCenter,
-                child: Image.asset('assets/images/dashboard.png'),
-              ),
-              // decoration: BoxDecoration(
-              //     image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
-              // ),
-            ),
+            child: Stack(
+              children: [
+                Container(
+                  alignment: Alignment.bottomCenter,
+                  width: double.infinity,
+                  height: 250,
+                  child: Image.asset('assets/images/dashboard.png'),
+                  // decoration: BoxDecoration(
+                  //     image: DecorationImage(image: AssetImage('assets/images/dashboard.png'),fit: BoxFit.contain)
+                  // ),
+                ),
+              ],
+            )
           ),
           Container(
             width: MediaQuery.sizeOf(context).width,
@@ -189,8 +190,7 @@ class _SecondContainerState extends State<SecondContainer> {
         children: [
           Container(
             padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 0),
-            child: Container(
-              alignment: Alignment.bottomCenter,
+            child: SizedBox(
               width: double.infinity,
               height: 550,
               child: FittedBox(
