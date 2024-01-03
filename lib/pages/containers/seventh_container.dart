@@ -228,7 +228,10 @@ class _SeventhContainerState extends State<SeventhContainer> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("20M+ downloaded from 32 \ndiffrent countires", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: 32, height: 1.2), textAlign: TextAlign.center,),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Text("20M+ downloaded from 32 diffrent countires", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: 32, height: 1.2), textAlign: TextAlign.center,),
+                  ),
                   Text("Try demo for 7 days with full features.", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: 20, height: 1.2), textAlign: TextAlign.center,),
                   SizedBox(height: 20,),
                   Row(
@@ -256,7 +259,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Try Free Demo", style: TextStyle(color: MyColors.primaryColor, fontSize: 18),),
+                                    Text("Try Free Demo", style: TextStyle(color: MyColors.primaryColor, fontSize: 16),),
                                     Icon(Icons.arrow_drop_down_outlined, color: MyColors.primaryColor, size: 22,)
                                   ],
                                 )
