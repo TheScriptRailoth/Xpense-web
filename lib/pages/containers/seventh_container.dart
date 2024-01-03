@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
 import '../../utils/constant.dart';
 import '../../utils/myColors.dart';
 class SeventhContainer extends StatefulWidget {
