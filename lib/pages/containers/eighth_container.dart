@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:xpense_web/utils/myColors.dart';
@@ -19,13 +20,15 @@ class _EightContainerState extends State<EightContainer> {
 
   Widget DesktopEighthContainer(){
     return Container(
-      height: 530,
+      padding: EdgeInsets.only(left: 50,right: 50, top: 70, bottom: 30),
+      // height: 530,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -207,9 +210,50 @@ class _EightContainerState extends State<EightContainer> {
                         SizedBox(width: 10,)
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(height: 20,),
+                  Text("We don’t sell your email and spam", style: TextStyle(
+                    color: Color(0xffBDBDBD),
+                    fontSize: MediaQuery.sizeOf(context).width/100,
+                  ),),
                 ],
               ),
+            ],
+          ),
+          SizedBox(height: 40,),
+          Container(
+            height: 2,
+            width: MediaQuery.sizeOf(context).width,
+            color: Colors.grey.withOpacity(0.2),
+          ),
+          SizedBox(height: 40,),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  TextButton(
+                    onPressed: (){},
+                    child: Text("Privacy & Terms", style: TextStyle(
+                      color: Colors.black,
+                      fontSize: MediaQuery.sizeOf(context).width/100,
+                    ),),
+                  ),
+                  SizedBox(width: 30,),
+                  TextButton(
+                    onPressed: (){},
+                    child: Text("Contact Us", style: TextStyle(
+                      color: Colors.black,
+                      fontSize: MediaQuery.sizeOf(context).width/100,
+                    ),),
+                  ),
+                ],
+              ),
+              Text("Copyright @ 2022 xpence", style: TextStyle(
+                color: Colors.black,
+                fontSize: MediaQuery.sizeOf(context).width/100,
+              ),),
+              Image.asset('assets/social_media_icon.png')
             ],
           )
         ],

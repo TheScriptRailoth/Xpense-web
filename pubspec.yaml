@@ -48,6 +48,7 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   google_fonts:
   responsive_builder: ^0.7.0
+  icon_icons: ^1.0.4
 
 
 # For information on the generic Dart part of this file, see the
