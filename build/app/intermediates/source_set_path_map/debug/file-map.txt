@@ -1,0 +1,13 @@
+com.example.xpense_web.app-jetified-window-1.0.0-beta04-0 C:\Users\am371\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\res
+com.example.xpense_web.app-jetified-annotation-experimental-1.1.0-1 C:\Users\am371\.gradle\caches\transforms-3\6c0c163cc77ae6c91f9f7dfcd179c29c\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.xpense_web.app-core-1.6.0-2 C:\Users\am371\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\res
+com.example.xpense_web.app-jetified-window-java-1.0.0-beta04-3 C:\Users\am371\.gradle\caches\transforms-3\ae81e06d24c799147c26814497a2a305\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.xpense_web.app-debug-4 C:\xpense_web\android\app\src\debug\res
+com.example.xpense_web.app-main-5 C:\xpense_web\android\app\src\main\res
+com.example.xpense_web.app-pngs-6 C:\xpense_web\build\app\generated\res\pngs\debug
+com.example.xpense_web.app-resValues-7 C:\xpense_web\build\app\generated\res\resValues\debug
+com.example.xpense_web.app-rs-8 C:\xpense_web\build\app\generated\res\rs\debug
+com.example.xpense_web.app-mergeDebugResources-9 C:\xpense_web\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.xpense_web.app-mergeDebugResources-10 C:\xpense_web\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.xpense_web.app-merged_res-11 C:\xpense_web\build\app\intermediates\merged_res\debug
+com.example.xpense_web.app-packaged_res-12 C:\xpense_web\build\path_provider_android\intermediates\packaged_res\debug
