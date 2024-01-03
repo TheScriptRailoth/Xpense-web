@@ -51,6 +51,44 @@ class _SeventhContainerState extends State<SeventhContainer> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("20M+ downloaded from 32 \ndiffrent countires", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: MediaQuery.sizeOf(context).width/25, height: 1.2), textAlign: TextAlign.center,),
+              Text("Try demo for 7 days with full features.", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: MediaQuery.sizeOf(context).width/60, height: 1.2), textAlign: TextAlign.center,),
+              SizedBox(height: 20,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 455,
+                    height: 323,
+                    child: Image.asset('assets/images/left_celebrate.png', fit: BoxFit.contain,),
+                  ),
+                  Container(
+                    height: 60,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: TextButton(
+                        onPressed: (){},
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Try Free Demo", style: TextStyle(color: MyColors.primaryColor, fontSize: 24),),
+                            Icon(Icons.arrow_drop_down_outlined, color: MyColors.primaryColor, size: 28,)
+                          ],
+                        )
+                    ),
+                  ),
+                  Container(
+                    width: 455,
+                    height: 323,
+                    child: Image.asset('assets/images/right_celebrate.png', fit: BoxFit.contain,),
+                  ),
+                ],
+              )
+
             ],
           ),
         ],
