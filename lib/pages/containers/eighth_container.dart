@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:xpense_web/utils/myColors.dart';
 class EightContainer extends StatefulWidget {
   const EightContainer({super.key});
 
@@ -153,19 +154,60 @@ class _EightContainerState extends State<EightContainer> {
                 ],
               ),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("NEWSLETTER", style: TextStyle(color: Colors.black, fontSize: 24),),
-                  InkWell(
-                    onTap: () {},
-                    child: Text(
-                      'Tap Me',
-                      style: TextStyle(
-                        color: Colors.blue, // Change the color of the text
-                        fontSize: 16, // Adjust the font size of the text
-                      ),
+                  SizedBox(height: 20,),
+                  Text("Over 25000 people have subscribed", style: TextStyle(
+                    color: Color(0xffBDBDBD),
+                    fontSize: MediaQuery.sizeOf(context).width/80,
+                  ),),
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 62,
+                    width: 349,
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black, width: 1),
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Row(
+                      children: [
+                        SizedBox(width: 10,),
+                        Expanded(
+                            child: TextFormField(
+                              decoration: InputDecoration(
+                                hintText: "Enter Your Email",
+                                border: InputBorder.none,
+                              ),
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                              cursorColor: MyColors.primaryColor,
+                            )
+                        ),
+                        SizedBox(width: 10,),
+                        Container(
+                          height: 48,
+                          width: 102,
+                          decoration: BoxDecoration(
+                            color: MyColors.primaryColor,
+                            borderRadius: BorderRadius.circular(10)
+                          ),
+                          child: ElevatedButton(
+                            style: ButtonStyle(
+                              backgroundColor: MaterialStateProperty.all(MyColors.primaryColor)
+                            ),
+                            onPressed: (){},
+                            child: Text(
+                              "Subscribe",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10,)
+                      ],
                     ),
                   )
-
                 ],
               ),
             ],
