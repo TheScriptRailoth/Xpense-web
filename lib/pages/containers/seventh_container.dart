@@ -62,24 +62,29 @@ class _SeventhContainerState extends State<SeventhContainer> {
                     height: 323,
                     child: Image.asset('assets/images/left_celebrate.png', fit: BoxFit.contain,),
                   ),
-                  Container(
-                    height: 60,
-                    width: 200,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10)
-                    ),
-                    child: TextButton(
-                        onPressed: (){},
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text("Try Free Demo", style: TextStyle(color: MyColors.primaryColor, fontSize: 24),),
-                            Icon(Icons.arrow_drop_down_outlined, color: MyColors.primaryColor, size: 28,)
-                          ],
-                        )
-                    ),
+                  Column(
+                    children: [
+                      SizedBox(height: 30,),
+                      Container(
+                        height: 60,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: TextButton(
+                            onPressed: (){},
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("Try Free Demo", style: TextStyle(color: MyColors.primaryColor, fontSize: 24),),
+                                Icon(Icons.arrow_drop_down_outlined, color: MyColors.primaryColor, size: 28,)
+                              ],
+                            )
+                        ),
+                      ),
+                    ],
                   ),
                   Container(
                     width: 455,
@@ -88,7 +93,6 @@ class _SeventhContainerState extends State<SeventhContainer> {
                   ),
                 ],
               )
-
             ],
           ),
         ],
