@@ -21,7 +21,7 @@ class _SecondContainerState extends State<SecondContainer> {
 
   Widget DesktopSecondContainer(){
     return Container(
-      height: 900,
+      height: 750,
       width: double.infinity,
       decoration: BoxDecoration(
         color: MyColors.primaryColor,
