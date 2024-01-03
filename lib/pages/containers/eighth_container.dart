@@ -567,7 +567,7 @@ class _EightContainerState extends State<EightContainer> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text("LINKS", style: TextStyle(color: Colors.black, fontSize: MediaQuery.sizeOf(context).width/30),),
+                          Text("LINKS", style: TextStyle(color: Colors.black, fontSize: MediaQuery.sizeOf(context).width/20),),
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: () {},
@@ -575,7 +575,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Home',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -585,7 +585,7 @@ class _EightContainerState extends State<EightContainer> {
                               'About Us',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -595,7 +595,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Career',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -605,7 +605,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Pricing',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -615,7 +615,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Feature',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -625,7 +625,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Blogs',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -643,7 +643,7 @@ class _EightContainerState extends State<EightContainer> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("LEGAL", style: TextStyle(color: Colors.black, fontSize: MediaQuery.sizeOf(context).width/30),),
+                          Text("LEGAL", style: TextStyle(color: Colors.black, fontSize: MediaQuery.sizeOf(context).width/20),),
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: () {},
@@ -651,7 +651,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Terms of use',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -661,7 +661,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Terms of condition',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -671,7 +671,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Privacy condition',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -681,7 +681,7 @@ class _EightContainerState extends State<EightContainer> {
                               'Cookie policy',
                               style: TextStyle(
                                 color: Colors.black,
-                                fontSize: MediaQuery.sizeOf(context).width/50,
+                                fontSize: MediaQuery.sizeOf(context).width/30,
                               ),
                             ),
                           ),
@@ -692,16 +692,16 @@ class _EightContainerState extends State<EightContainer> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("NEWSLETTER", style: TextStyle(color: Colors.black, fontSize: MediaQuery.sizeOf(context).width/30),),
+                          Text("NEWSLETTER", style: TextStyle(color: Colors.black, fontSize: MediaQuery.sizeOf(context).width/20),),
                           SizedBox(height: 20,),
                           Text("Over 25000 people have subscribed", style: TextStyle(
                             color: Color(0xffBDBDBD),
-                            fontSize: MediaQuery.sizeOf(context).width/50,
+                            fontSize: MediaQuery.sizeOf(context).width/40,
                           ),),
-                          SizedBox(height: 20,),
+                          SizedBox(height: 10,),
                           Container(
-                            height: MediaQuery.sizeOf(context).width*0.06,
-                            width: MediaQuery.sizeOf(context).width*0.35,
+                            height: MediaQuery.sizeOf(context).width*0.07,
+                            width: MediaQuery.sizeOf(context).width*0.40,
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.black, width: 1),
                                 borderRadius: BorderRadius.circular(10)
@@ -718,7 +718,7 @@ class _EightContainerState extends State<EightContainer> {
                                         ),
                                         style: TextStyle(
                                             color: Colors.black,
-                                            fontSize: MediaQuery.sizeOf(context).width/60
+                                            fontSize: MediaQuery.sizeOf(context).width/42
                                         ),
                                         cursorColor: MyColors.primaryColor,
                                       ),
@@ -726,8 +726,8 @@ class _EightContainerState extends State<EightContainer> {
                                 ),
                                 SizedBox(width: 10,),
                                 Container(
-                                  height: MediaQuery.sizeOf(context).width*0.048,
-                                  width: MediaQuery.sizeOf(context).width*0.098,
+                                  height: MediaQuery.sizeOf(context).width*0.05,
+                                  width: MediaQuery.sizeOf(context).width*0.13,
                                   decoration: BoxDecoration(
                                       color: MyColors.primaryColor,
                                       borderRadius: BorderRadius.circular(10)
@@ -752,7 +752,7 @@ class _EightContainerState extends State<EightContainer> {
                           SizedBox(height: 20,),
                           Text("We don’t sell your email and spam", style: TextStyle(
                             color: Color(0xffBDBDBD),
-                            fontSize: MediaQuery.sizeOf(context).width/60,
+                            fontSize: MediaQuery.sizeOf(context).width/40,
                           ),),
                         ],
                       ),
