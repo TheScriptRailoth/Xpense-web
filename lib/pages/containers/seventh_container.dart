@@ -244,8 +244,8 @@ class _SeventhContainerState extends State<SeventhContainer> {
                         children: [
                           SizedBox(height: 30,),
                           Container(
-                            height: 60,
-                            width: 200,
+                            height: 35,
+                            // width: 200,
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(10)
@@ -256,8 +256,8 @@ class _SeventhContainerState extends State<SeventhContainer> {
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Text("Try Free Demo", style: TextStyle(color: MyColors.primaryColor, fontSize: 24),),
-                                    Icon(Icons.arrow_drop_down_outlined, color: MyColors.primaryColor, size: 28,)
+                                    Text("Try Free Demo", style: TextStyle(color: MyColors.primaryColor, fontSize: 18),),
+                                    Icon(Icons.arrow_drop_down_outlined, color: MyColors.primaryColor, size: 22,)
                                   ],
                                 )
                             ),
