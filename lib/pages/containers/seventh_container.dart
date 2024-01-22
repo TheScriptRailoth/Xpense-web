@@ -23,7 +23,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
     return Container(
       height: 750,
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: MyColors.primaryColor,
       ),
       child: Stack(
@@ -31,7 +31,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
           Positioned(
               right:-20,
               top: -20,
-              child: Container(
+              child: SizedBox(
                   height: 320,
                   width: 320,
                   child: Image.asset(RightVector)
@@ -56,7 +56,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
                 children: [
                   Text("20M+ downloaded from 32 \ndiffrent countires", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: MediaQuery.sizeOf(context).width/25, height: 1.2), textAlign: TextAlign.center,),
                   Text("Try demo for 7 days with full features.", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: MediaQuery.sizeOf(context).width/60, height: 1.2), textAlign: TextAlign.center,),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,7 +68,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
                       ),
                       Column(
                         children: [
-                          SizedBox(height: 30,),
+                          const SizedBox(height: 30,),
                           Container(
                             height: 60,
                             width: 200,
@@ -78,7 +78,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
                             ),
                             child: TextButton(
                                 onPressed: (){},
-                                child: Row(
+                                child: const Row(
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
@@ -90,7 +90,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
                           ),
                         ],
                       ),
-                      Container(
+                      SizedBox(
                         width: imageWidth,
                         height: imageHeight,
                         child: Image.asset('assets/images/right_celebrate.png', fit: BoxFit.contain,),
@@ -197,7 +197,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
     return Container(
       height: 350,
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: MyColors.primaryColor,
       ),
       child: Stack(
@@ -228,12 +228,12 @@ class _SeventhContainerState extends State<SeventhContainer> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
                     child: Text("20M+ downloaded from 32 diffrent countires", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: 32, height: 1.2), textAlign: TextAlign.center,),
                   ),
-                  Text("Try demo for 7 days with full features.", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: 20, height: 1.2), textAlign: TextAlign.center,),
-                  SizedBox(height: 20,),
+                  const Text("Try demo for 7 days with full features.", style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold, fontSize: 20, height: 1.2), textAlign: TextAlign.center,),
+                  const SizedBox(height: 20,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -245,7 +245,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
                       // ),
                       Column(
                         children: [
-                          SizedBox(height: 30,),
+                          const SizedBox(height: 30,),
                           Container(
                             height: 35,
                             // width: 200,
@@ -255,7 +255,7 @@ class _SeventhContainerState extends State<SeventhContainer> {
                             ),
                             child: TextButton(
                                 onPressed: (){},
-                                child: Row(
+                                child: const Row(
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
